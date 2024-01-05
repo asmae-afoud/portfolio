@@ -1,0 +1,476 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Silkscreen&display=swap');
+
+:root{
+    --fist-color:#DFEAE7;
+    --second-color:#EE0C61;
+    --bg-color-1:#473B3F;
+    --bg-color-2:#020400;
+    --light-color:#9fa1ad;
+    --padding: 8%;
+    
+     }
+span{
+    color: var( --second-color)
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+html{
+   font-family: 'Poppins', sans-serif;
+    color: var( --fist-color);
+    font-size: 16px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--bg-color-2);
+    height: 3.5rem;
+    align-items: center;
+    padding: 2rem var( --padding);
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    }
+ul li{
+     margin-left: 2rem;
+}
+
+ul li a{
+    color: var( --fist-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+    }
+
+ul li a:hover{
+     color:var(--second-color);
+     }
+.home{
+     background-color: var( --bg-color-1);
+     height: 100vh;
+     padding: 0 var(--padding);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+      }
+img{
+    width: 100%;
+    }
+.image{
+     width: 35%;
+}
+h1{
+    font-size: 4rem;
+    }
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    1.25rem;
+}
+.title2{
+    margin: 1.7rem 0;
+}
+.title3{
+      margin-bottom: 3rem;
+}
+
+.social{
+      margin-top: 3rem;
+}
+.btn{
+    background-color: var( --second-color);
+    border-radius: 30px;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: var(--fist-color);
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+.btn:hover{
+        background-color: transparent;
+    border: 2px solid var(--second-color);
+}
+.social a i{
+        color: var( --light-color);
+        font-size: 1.5rem;
+        border: 1px solid var(--light-color);
+        border-radius: 50%;
+        padding: 8px;
+        margin-right: 1rem;
+}
+
+.social a i:hover{
+                color: var(--second-color);
+                border: 1px solid var(--second-color);
+                transform: scale(1.2);
+}
+ 
+
+.about{
+       background-color: var( --bg-color-1);
+       padding: 2rem var(--padding);
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       height: 100vh;
+}
+
+ .about .image,
+ .about .text{
+           width: 35%;
+}
+
+p{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+h5{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.services{
+         background-color: var( --bg-color-1);
+         padding: 2rem var(--padding);
+         
+} 
+.services h1{
+        text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    
+}
+.services .card{
+               width: 250px;
+               background-color: var(--bg-color-2);
+               border-radius: 20px;
+               padding: 1.3rem 2rem;
+               text-align: center;
+}
+.services .card i{
+                color: var( --second-color);
+                font-size: 3.12rem;
+                margin-bottom: 1rem;
+                
+}
+
+.services p{
+          font-size: 1rem;
+          font-style: italic;
+}
+
+.projects{
+         background-color: var(--bg-color-1);
+         padding: 2rem var(--padding);
+}
+
+.projects h1{
+            text-align: center;
+            
+} 
+
+.projects .card{
+               background-color: var(--bg-color-2);
+               width: 250px;
+               border-radius: 20px;
+               padding: 1.3rem 2rem;
+}
+        
+.projects img{
+          border-radius: 5px;
+          
+          
+}
+
+.projects .card-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects i{
+         font-size: 1rem;
+         color: var(--second-color);
+}
+
+footer{
+      background-color: var(--bg-color-2);
+      padding: 2rem var(--padding);
+}
+
+footer p{
+       text-align: center;
+}
+
+.menu{
+     display: none;
+}
+
+@media screen and (max-width:574px){
+    :root{
+         --padding: 1.5rem;
+    }
+    ul{
+        display: none;
+    }
+    .menu{
+         display: flex;
+         font-size: 1.5rem;
+    }
+    html{
+        font-size: 12px;
+    }
+     .home .image{
+         display: none;}
+    .about{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+         }
+    .about .text{
+        width: 80%;
+    }
+    .box{
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 1rem;
+    }
+    .services .box .card{
+        width: 400px;
+    }
+    
+    .projects .box .card {
+        width: 400px;
+                  }
+    .projects .box .card i{
+        font-size: 1.5rem;
+    }
+    
+    .projects .box{
+        grid-gap: 1.5rem;
+    }
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:574px) and (max-width:991px){
+     :root{
+         --padding: 4.5rem;
+    }
+    ul{
+        display: none;
+    }
+    .menu{
+         display: flex;
+         font-size: 1.5rem;
+    }
+    html{
+        font-size: 12px;
+    }
+     .home .image{
+         display: none;}
+    .about{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+         }
+    .about .text{
+        width: 80%;
+    }
+    .box{
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 1rem;
+    }
+    .services .box .card{
+        width: 400px;
+    }
+    
+    .projects .box .card {
+        width: 400px;
+                  }
+    .projects .box .card i{
+        font-size: 1.5rem;
+    }
+    
+    .projects .box{
+        grid-gap: 1.5rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:991px) and (max-width:1279px){
+     :root{
+         --padding: 4.5rem;
+    }
+    ul{
+        display: none;
+    }
+    .menu{
+         display: flex;
+         font-size: 1.5rem;
+    }
+    html{
+        font-size: 12px;
+    }
+     .home .image{
+         display: none;}
+    .about{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+         }
+    .about .text{
+        width: 80%;
+    }
+    .box{
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 1rem;
+    }
+    .services .box .card{
+        width: 400px;
+    }
+    
+    .projects .box .card {
+        width: 400px;
+                  }
+    .projects .box .card i{
+        font-size: 1.5rem;
+    }
+    
+    .projects .box{
+        grid-gap: 1.5rem;
+    }
+    
+}
+
+
+    
+         
+    
+         
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
